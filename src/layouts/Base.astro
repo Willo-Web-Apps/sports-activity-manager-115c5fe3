@@ -8,7 +8,7 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "a tool for parents to manage their kids sports and extra curriculum activities" } = Astro.props;
+const { title = "Sideline — Family Activity Hub", description = "Sideline unites every practice, game, recital, and class into one beautiful family dashboard — built for parents, not coaches." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -18,13 +18,20 @@ const { title = "Your New Business", description = "a tool for parents to manage
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="theme-color" content="#2E6B4F" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>{title}</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Your New Business",
-      "description": "a tool for parents to manage their kids sports and extra curriculum activities",
+      "name": "Sideline",
+      "description": "Sideline unites every practice, game, recital, and class into one beautiful family dashboard — built for parents, not coaches.",
       "url": "https://sports-activity-manager.onrender.com"
     }
     </script>
