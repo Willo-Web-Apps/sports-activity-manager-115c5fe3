@@ -1,4 +1,4 @@
-# Design DNA — Sideline
+# Design DNA — KidFlow
 
 ## Visual Personality: organic-natural
 ## Layout: product-led
